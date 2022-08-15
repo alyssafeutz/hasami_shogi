@@ -1,9 +1,7 @@
-# Name: Alyssa Feutz
-# Date: November 12th 2021
-# Description: Hasami Shogi Game
+# Description: Hasami Shogi board game simulation
 
 
-class HasamiShogiGame:
+class HasamiShogi:
     """A class that has several data members and methods which work
     together to simulate a game of Hasami Shogi"""
     def __init__(self, gameboard=None):
@@ -434,7 +432,7 @@ class HasamiShogiGame:
         self._check_for_captures(desired_position)
         self._check_for_win()
         self._change_active_player()
-        self.print_gameboard()
+        # self.print_gameboard()
         return True
 
     def print_gameboard(self):
